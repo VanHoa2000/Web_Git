@@ -217,8 +217,8 @@ body {
     border: 1px solid var(--main-color);
 }
 
-.block_product_tabs .title-block {
-    width: 490px;
+.title-block > div{
+    width: 218px;
 }
 
 .top-block .right-nav {
