@@ -18,7 +18,8 @@ body {
 
 :root {
     --main-color: #ff0000;
-    --main-background: #f6f6f6;;
+    --main-background: #f6f6f6;
+    --blue-color: #288ad6;
 }
 /*---------------- CLASS DÙNG CHUNG ----------------------*/
 .mt-8{
@@ -268,14 +269,139 @@ body {
 
 .fillter-price .item:hover {
     color: #fff;
-    background: linear-gradient(320deg, red 62%, #ff9e9e 100%)
+    background: linear-gradient(320deg, red 62%, #ff9e9e 100%);
+}
+
+.product-tab {
+    padding-bottom: 7px;
 }
 
 .product-tab .slide-show-list{
     display: flex;
-    margin-top: 12px;
+    margin: 12px 7px 0px 7px;
+    justify-content: space-evenly;
 }
 
+.slide-show-list .item {
+    border: 1px solid #e7e7e77d;
+    margin: 7px;
+    overflow: hidden;
+}
+
+.product-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image a img{
+    transition: all .3s ease;
+}
+
+.product-image a img:hover {
+    transform: scale(1.05);
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: #f7d704;
+    padding: 1px 8px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.discount i {
+    color: #dc0000;
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.discount label {
+    color: #dc0000;;
+}
+
+.text_smal_3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6800;
+    border-radius: 4px;
+    padding: 4px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+h3 .name {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 17px;
+    height: 33px;
+}
+
+h3 .name:hover {
+    color: var(--blue-color);
+}
+
+.text_small_1 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text_small_1 span {
+    background-color: #e74c3c;
+    padding: 1px;
+}
+
+.price_area {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.price_current {
+    color: #dc0000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.price_old {
+    color: #929292;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.text_small_2 {
+    display: block;
+    font-size: 12px;
+    font-weight: 550;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.text_small_2 span {
+    border: 1px dashed #f57224;
+    background-color: #fbf1e9;
+    border-radius: 3px;
+    padding: 8px;
+}
 /*-- KẾT THÚC PHẦN SẢN PHẨM BÁN CHẠY --*/
 
 
