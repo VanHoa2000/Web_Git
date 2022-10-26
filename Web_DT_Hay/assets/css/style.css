@@ -139,6 +139,15 @@ body {
 /* -- PHẦN SLIDE -- */
 
 /* -- KẾT THÚC PHẦN SLIDE -- */
+.slideshow-countdown{
+    max-width: 100%;
+    height: 357px;
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
 
 /* --PHẦN CÁC HÃNG ĐIỆN THOẠI --*/
 
