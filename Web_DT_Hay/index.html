@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
@@ -186,26 +191,40 @@
             </div>
             <!-- KẾT THÚC MENU -->
             <!-- SLIDE  -->
-            <div class="slide-show">
-                <div class="slide-show-item owl-carousel">
-                    <div class="item">
-                        <a href="#">
-                            <img src="./assets/images/slideshow/neo-3_1661744627.jpg" alt="">
-                        </a>
+            <div class="slide-show ">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/images/slideshow/neo-3_1661744627.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/images/slideshow/q5-pro_1662515543.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/images/slideshow/slide_1663112198.jpg" alt="">
+                            </a>
+                        </div>
+           
                     </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="./assets/images/slideshow/q5-pro_1662515543.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="./assets/images/slideshow/slide_1663112198.jpg" alt="">
-                        </a>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="thumb">
-
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+						Redmi Note 11T Pro rẻ nhất						
+                      </div>
+                      <div class="swiper-slide">
+                        Redmi Note 11T Pro rẻ nhất	
+                      </div>
+                      <div class="swiper-slide">
+                        Redmi Note 11T Pro rẻ nhất	
+                      </div>
+                    </div>
                 </div>
             </div>
             <!-- KẾT THÚC SLIDE -->
@@ -1667,6 +1686,9 @@
         </div>
     </div>
     <!-- KẾT THÚC PHẦN FOOTER -->
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/action.js"></script>
 </body>
 
 </html>

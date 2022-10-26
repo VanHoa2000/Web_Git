@@ -137,9 +137,8 @@ body {
 }
 
 /* -- PHẦN SLIDE -- */
-
-/* -- KẾT THÚC PHẦN SLIDE -- */
-.slideshow-countdown{
+/* PHẦN MENU */
+.slideshow__countdown{
     max-width: 100%;
     height: 357px;
     position: relative;
@@ -148,6 +147,113 @@ body {
     justify-content: space-between;
     gap: 12px;
 }
+.product__menu .menu{
+    position: relative;
+    width: 226px;
+}
+.product__menu .menu .product-menu-ul{
+    background: #fff;
+    position: relative;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+.product__menu .menu .product-menu-ul .product-menu-li{
+    list-style: none;
+}
+.product__menu .menu .product-menu-ul .product-menu-li:hover{
+    background-color: var(--main-color);
+    
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item{
+    text-decoration: none;
+    display: block;
+    padding: 11px 0px 10px 56px;
+    transition: .5s;
+    color: #000;
+    position: relative;
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item:hover{
+    color:#fff;
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item .icon{
+    position: absolute;
+    left: 20px;
+    top:10px;
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item .icon img{
+    width: 20px;
+    height: 20px;
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item .text{
+    font-size: 15px;
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item .last{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    fill: gray;
+    width: 10px;
+    height: 10px;
+}
+.product__menu .menu .product-menu-ul .product-menu-li .menu-item::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #edededd6;
+    bottom: 0px;
+    left: 20px;
+    width: calc(100% - 40px);  
+}
+/* KẾT THÚC PHẦN MENU */
+/* PHẦN SLIDE */
+.slide-show{
+    position: relative;
+    width: 675px;
+}
+.slide-show .sswiper .swiper-slide{
+    width: 675px;
+}
+.slide-show .swiper .swiper-slide a img{
+    max-width: 100%;
+}
+.slide-show .swiper-pagination{
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    padding: 6px 7px;
+    border-radius: 19px;
+    right: 4%;
+}
+.slide-show .swiper-pagination-bullet {
+    background: red;
+    margin: 0px 4px;
+    width: 12px;
+    height: 13px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.slide-show .swiper-pagination-bullet-active{
+    background: var(--main-color);
+    box-shadow: inset rgb(255 255 255 / 37%) -1px 1px 1px;
+}
+/* PHẦN BANNER */
+.countdown {
+    position: relative;
+  }
+  .countdown .banner .item {
+    margin-top: 10px;
+  }
+  .countdown .banner .item:nth-child(1) {
+    margin-top: 0px;
+  }
+  .countdown .banner .item a img {
+    max-width: 100%;
+    height: 109px;
+  }
+  
+/* KẾT THÚC PHẦN BANNER */
+/* KẾT THÚC PHẦN SLIDE */
+/* -- KẾT THÚC PHẦN SLIDE -- */
 
 /* --PHẦN CÁC HÃNG ĐIỆN THOẠI --*/
 
