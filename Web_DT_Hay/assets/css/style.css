@@ -571,5 +571,122 @@ h3 .name:hover {
 }
 
 /* -- KẾT THÚC PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
+.post3 .block_testimonials .title span::before{
+    width: 70px;
+    height: 40px;
+    clip-path: polygon(0 100%, 100% 100%, 0 -99%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #ef0000;
+}
+.post3 .block_testimonials .title span::after{
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+    position: absolute;
+    left: 34px;
+    top: 3px;
+    content: '';
+    background: #ef0000;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    box-shadow: #00000029 0px 1px 4px;
+}
+.post3 .block_testimonials .content{
+    display: flex;
+    gap: 15px;
+
+}
+
+.post3 .block_testimonials .content .item .name{
+    margin-top: -5px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0px;
+}
+.post3 .block_testimonials .content .item{
+    padding-bottom: 10px;
+    background: #ebebeb;
+}
+.post3 .block_testimonials .content .item .description{
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 22px;
+    padding: 12px 12px 0px;
+    box-sizing: border-box;
+}
+/* END */
+/* PHẦN VIDEO TIN TỨC */
+.post4{
+    background: #fff;
+    padding: 0px 12px 14px;
+    box-sizing: border-box;
+}
+.post4 .block_banner .title {
+    background: #fff;
+    margin-bottom: 15px;
+}
+.post4 .block_banner .title span {
+    display: inline-block;
+    background: var(--main-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px 8px 80px;
+    position: relative;
+    cursor: pointer;
+    line-height: 22px;
+    color: #fff;
+}
+.post4 .block_banner .title span::before{
+    width: 70px;
+    height: 40px;
+    clip-path: polygon(0 100%, 100% 100%, 0 -99%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #ef0000;
+}
+.post4 .block_banner .title span::after{
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+    position: absolute;
+    left: 34px;
+    top: 3px;
+    content: '';
+    background: #ef0000;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    box-shadow: #00000029 0px 1px 4px;
+}
+.post4 .block_banner .content{
+    display: flex;
+    flex-wrap: wrap
+    
+}
+.post4 .block_banner .content .item{
+    position: relative;
+    width: calc(25% - 14px);
+    margin: 0px 7px;
+    border: 1px solid #e7e7e77d;
+    box-sizing: border-box;
+}
+.post4 .block_banner .content .item a{
+    text-decoration: none;
+    color: #000;
+}
+.post4 .block_banner .content .item .name{
+    line-height: 22px;
+    padding: 10px 13px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* END */
 
 /*-------- KẾT THÚC PHẦN CONTENT--------- */
