@@ -236,6 +236,29 @@ body {
     background: var(--main-color);
     box-shadow: inset rgb(255 255 255 / 37%) -1px 1px 1px;
 }
+.slide-show .thumbs .swiper{
+    background: #fff;
+    width: 100%;
+}
+.slide-show .thumbs{
+    margin-top: -8px;
+}
+.slide-show .thumbs .swiper .swiper-wrapper .swiper-slide{
+    width: 142px;
+    border-right: 1px solid #e7e7e791;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.slide-show .thumbs .swiper .swiper-wrapper .swiper-slide a{
+    text-decoration: none;
+    color: #000;
+}
 /* PHẦN BANNER */
 .countdown {
     position: relative;
