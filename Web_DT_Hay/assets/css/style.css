@@ -569,8 +569,20 @@ h3 .name:hover {
 .block_testimonials .content {
     display: flex;
 }
-
-/* -- KẾT THÚC PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
+.post3 .block_testimonials .title{
+    margin-bottom: 15px;
+}
+.post3 .block_testimonials .title span{
+    display: inline-block;
+    background: var(--main-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px 8px 80px;
+    position: relative;
+    cursor: pointer;
+    line-height: 22px;
+    color: #fff;
+}
 .post3 .block_testimonials .title span::before{
     width: 70px;
     height: 40px;
