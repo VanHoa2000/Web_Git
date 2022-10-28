@@ -9,10 +9,10 @@ html{
     margin: auto;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    padding-top: 66px;
     background-color: var(--main-background);
 }
 
@@ -38,6 +38,94 @@ body {
     margin-left: -8px !important;
     margin-right: -8px !important;
 }
+
+/* ------ PHẦN NÚT NỔI --------------- */
+
+.center-button {
+    position: fixed;
+    top: 40%;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.youtube i,
+.facebook i,
+.twitter i,
+.tiktok i {
+    padding: 6px;
+    font-size: 24px;
+    border-radius: 50px;
+    margin-bottom: 6px;
+    transition: 0.2s ease-in-out all;
+}
+
+.youtube i {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.facebook i {
+    color: #0278ad;
+    border: 1px solid #0278ad;
+    font-weight: bold;
+}
+
+.twitter i {
+    color: #4545da;
+    border: 1px solid #4545da;
+}
+
+.tiktok i {
+    border: 1px solid;
+}
+
+.youtube i:hover,
+.facebook i:hover,
+.twitter i:hover,
+.tiktok i:hover {
+    color: #f56437;
+    border-color: #f56437;
+}
+
+.bottom-button {
+    position: fixed;
+    bottom: 16%;
+    left: 12px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.bottom-button i {
+    padding: 1px;
+    font-size: 50px;
+    background-color: #fff;
+    color: #2196f3;
+    border-radius: 50px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.right-button i {
+    cursor: pointer;
+    display: block;
+    padding: 1px;
+    position: fixed;
+    bottom: 15%;
+    right: 25px;
+    background-color: #fa7b7b;
+    font-size: 40px;
+    border-radius: 50px;
+    color: white;
+    transition: 0.2s ease-in-out all;
+}
+
+.right-button i:hover{
+    color: #000;
+    background-color: var(--main-color);
+}
+
+/* ------ END --------------- */
+
 /*----------------- PHẦN HEADER ---------------*/
 #header {
     background-color: var(--main-color);
@@ -131,8 +219,12 @@ body {
 
 /*----------- PHẦN CONTENT -----------*/
 
+#content {
+    padding-top: 66px;
+}
+
 #content .container {
-    margin: 14px auto 0 auto;
+    margin: 20px auto 0 auto;
     max-width: 1200px;
 }
 
@@ -543,7 +635,7 @@ h3 .name:hover {
 
 .cat_item_store {
     background-color: #fff;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
 
 .bot-block {
@@ -570,7 +662,7 @@ h3 .name:hover {
     display: flex;
 }
 .post3 .block_testimonials .title{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .post3 .block_testimonials .title span{
     display: inline-block;
@@ -702,3 +794,97 @@ h3 .name:hover {
 /* END */
 
 /*-------- KẾT THÚC PHẦN CONTENT--------- */
+
+/* ----------- PHẦN FOOTER -------------- */
+
+#footer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ef0000;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.footer__menu {
+    width: 42%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.level0,
+.level0 ul {
+    list-style: none;
+}
+
+.level0 a,
+.tt__list-address{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.level0 ul li,
+.wrapper__list-address .item{
+    margin-bottom: 15px;
+}
+
+.address__footer {
+    color: #fff;
+    width: 40%;
+}
+
+.wrapper__list-address .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper__list-address .item span{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer__bot .partner{
+    width: 50%;
+}
+
+.footer__bot .title {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer__bot .content {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer__bot .item img{
+    cursor: pointer;
+    width: 51px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-right: 12px;
+}
+
+.copyright a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+/* ----------- KẾT THÚC PHẦN FOOTER -------------- */
