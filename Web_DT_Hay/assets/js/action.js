@@ -1,5 +1,6 @@
 
-var swiper = new Swiper(".mySwiper", {
+console.log('start');
+var swiper = new Swiper(".slide-show .mySwiper", {
   spaceBetween: 10,
   pagination: {
     el: ".swiper-pagination",
@@ -19,3 +20,15 @@ var thumbs = new Swiper(".thumbs .mySwiper2", {
    centeredSlides: true,
   centeredSlidesBounds: true,
 });
+// SẢN PHẦM BÁN CHẠY
+// var swiper1 = new Swiper(".mySwiper3", {
+//   slidesPerView: 5,
+//   loop:true,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+  
+// });
+// console.log('end');
+
