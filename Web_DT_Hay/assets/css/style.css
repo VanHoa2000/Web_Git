@@ -301,22 +301,21 @@ body {
 } 
 .product__menu .menu .product-menu-ul .product-menu-li .level1{
     position: absolute;
-    left: 100%;
+    bottom: 0;
     width: 974px;
+    padding: 20px;
+    left: 100%;
     z-index: 3;
     background: #fff;
     height: 100%;
-    top:0px;
-    padding: 20px;
-    border-left: 3px solid var(--main-color);
-    box-shadow: 1px 0px 3px 0px rgb(30 87 153 / 20%);
-    height: 100%;
     transition: .4s;
-    overflow: hidden;
+    max-height: 0px;
     visibility: hidden;
+    border-left: 3px solid var(--main-color);
 }
 .product__menu .menu .product-menu-ul .product-menu-li:hover .level1{
-    visibility:visible;
+    max-height: 100%;
+    visibility: visible;
 }
 .product__menu .menu .product-menu-ul .product-menu-li .level1 .col-number{
     width: calc(100% / 4);
