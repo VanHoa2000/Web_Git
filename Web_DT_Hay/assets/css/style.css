@@ -360,40 +360,42 @@ body {
     position: relative;
     width: 675px;
 }
-.slide-show .sswiper .swiper-slide{
+.slide-show {
     width: 675px;
 }
-.slide-show .swiper .swiper-slide a img{
+.slide-show a img{
     max-width: 100%;
 }
-.slide-show .swiper-pagination{
+.slide-show .slide-show-item .slick-dots{
     text-align: center;
     position: absolute;
     bottom: 15px;
     padding: 6px 7px;
     border-radius: 19px;
-    right: 4%;
 }
-.slide-show .swiper-pagination-bullet {
-    background: red;
+.slide-show .slide-show-item .slick-dots li{
+    background: #cccccc;
     margin: 0px 4px;
     width: 12px;
     height: 13px;
     border-radius: 50%;
+    display: inline-block;
     box-sizing: border-box;
+    list-style: none;
 }
-.slide-show .swiper-pagination-bullet-active{
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slide-show .slide-show-item .slick-dots .slick-active{
     background: var(--main-color);
     box-shadow: inset rgb(255 255 255 / 37%) -1px 1px 1px;
 }
-.slide-show .thumbs .swiper{
-    background: #fff;
-    width: 100%;
+.slide-show .slide-show-item .slick-dots li button{
+    display: none;
 }
 .slide-show .thumbs{
-    margin-top: -8px;
-}
-.slide-show .thumbs .swiper .swiper-wrapper .swiper-slide{
+    background-color: #fff;
+    width: 100%;
     width: 142px;
     border-right: 1px solid #e7e7e791;
     height: 66px;
@@ -405,9 +407,15 @@ body {
     line-height: 20px;
     text-align: center;
 }
-.slide-show .thumbs .swiper .swiper-wrapper .swiper-slide a{
+.slide-show .thumbs .item a{
     text-decoration: none;
-    color: #000;
+    color: var(--black-color);
+}
+.slide-show .thumbs .item{
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    border-right: 1px solid #e7e7e791;
 }
 /* PHẦN BANNER */
 .countdown {
