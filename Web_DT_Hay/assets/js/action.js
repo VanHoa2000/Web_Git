@@ -6,4 +6,14 @@ $(document).ready(function(){
     arrows:false,
   });
 });
+$(document).ready(function(){
+  $('.thumbs').slick({
+    dots: false,
+    speed: 300,
+    Swipe: true,
+    slidesToShow: 5,
+    arrows:false,
+  });
+});
+
 
