@@ -417,6 +417,9 @@ body {
     font-size: 14px;
     border-right: 1px solid #e7e7e791;
 }
+.slide-show .thumbs .item.slick-current a{
+    color: var(--main-color);
+}
 /* PHẦN BANNER */
 .countdown {
     position: relative;
