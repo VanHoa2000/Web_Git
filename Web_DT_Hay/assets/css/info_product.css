@@ -39,6 +39,14 @@ body {
     margin-left: -8px !important;
     margin-right: -8px !important;
 }
+
+.hide {
+    display: none;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
 /* ------ PHẦN NÚT NỔI --------------- */
 
 .center-button {
@@ -387,6 +395,45 @@ body {
     width: 100%;
 }
 /* KẾT THÚC PHẦN MENU */
+
+/* ------ PHẦN SẢN PHẨM ------- */
+
+/* TIÊU ĐỀ SẢN PHẨM */
+.product .product_name {
+    display: flex;
+    align-items: flex-end;
+}
+
+.product_name h1 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.product_name .text_small {
+    font-size: 18px;
+    margin-right: 16px;
+}
+
+.rate span{
+    color: #ff9727;
+}
+
+.rate .text-rate {
+    color: var(--black-color);
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+/* HÌNH ẢNH SẢN PHẨM */
+
+#content .product-frame {
+    display: flex;
+}
+
+/* -------------- END ---------------- */
+
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
 
 .post3 .block_testimonials {
