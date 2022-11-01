@@ -402,6 +402,8 @@ body {
 .product .product_name {
     display: flex;
     align-items: flex-end;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 15px;
 }
 
 .product_name h1 {
@@ -430,8 +432,200 @@ body {
 
 #content .product-frame {
     display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
 }
 
+.product-frame img {
+    width: 100%;
+}
+
+/* --FRAME LEFT */
+
+.product-frame .frame-left {
+    width: 35%;
+    padding-right: 20px;
+}
+
+.frame-left__thumbs {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.frame-left__thumbs .item a {
+    text-decoration: none;
+    display: block;
+}
+
+.frame-left__thumbs .item i {
+    padding: 13px 16px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    transition: 0.5s all ease;
+    font-size: 40px;
+    color: #000;
+}
+
+.text-icon-thumbs{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+
+.frame-left__thumbs .item i:hover{
+    color: var(--main-color);
+}
+
+.frame-left__hit-share {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.frame-left__hit-share .fb-item{
+    display: flex;
+    padding: 3px 10px;
+    width: 90px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #1877f2;
+    color: #fff;
+}
+
+.frame-left__hit-share .fb-text{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.frame-left__hit-share .fb-quantity {
+    font-size: 11px;
+}
+
+.frame-left_produce-info {
+    margin: 25px 0 15px;
+    line-height: 1.6;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.frame-left__banner {
+    padding-left: 20px;
+}
+
+/* FRAME CENTER */
+
+.product-frame .frame-center {
+    width: 38%;
+    margin-top: 15px;
+}
+
+.frame-center .price {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.frame-center .price .price-current {
+    font-size: 26px;
+    color: #dc0000;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.frame-center .price .price-old {
+    font-size: 15px;
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.frame-center .status_quantity {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.frame-center .status_quantity span + span {
+    margin-left: 5px;
+}
+
+.frame-center .status_quantity .available {
+    margin-left: 5px;
+    color: #4caf50;
+    font-size: 16px;
+}
+
+.frame-center .choice-color {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.frame-center .choice-color .selector {
+    border: 1px solid #9B9B9B;
+    position: relative;
+    padding: 12px;
+    margin: 0 6px;
+    border-radius: 50px;
+}
+
+.selector i {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.selector .color-item {
+    position: absolute;
+    text-align: center;
+    min-width: 70px;
+    top: -26px;
+    left: -96%;
+    z-index: 2;
+    background-color: rgba(68, 148, 211, 0.9);
+    color: #fff;
+    padding: 5px 7px;
+    font-weight: normal;
+    border-radius: 3px;
+}
+
+.gray {
+    background-color: #666666;
+}
+
+.black {
+    background-color: #000;
+}
+
+.blue {
+    background-color: #03f;
+}
+
+.choice-color .selector:hover {
+    border-color: var(--main-color);
+}
+
+.selector:hover i,
+.selector:hover .color-item{
+    display: block;
+}
+
+
+/* FRAME RIGHT */
+
+.product-frame .frame-right {
+    width: 27%;
+}
 /* -------------- END ---------------- */
 
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
