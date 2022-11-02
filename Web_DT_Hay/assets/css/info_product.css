@@ -876,6 +876,10 @@ body {
     cursor: pointer;
     box-sizing: border-box;
 }
+.characteristic-videos .characteristic-l .top-info-detail .view-more-detail-char span:hover{
+    background: var(--main-color);
+    color: #fff;
+}
 .characteristic-videos .characteristic-l .top-info-detail .view-more-detail-char span{
     display: inline-block;
     border: 1px solid var(--main-color);
@@ -967,6 +971,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 
 }
 .list_vertical .item-related .img_a img{
@@ -997,15 +1002,12 @@ body {
 /* KẾT THÚC PHẦN LIST SẢN PHẨM SO SÁNH */
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
 
-.post3 .block_testimonials{
-    display: none;
-}
 .block_testimonials .content {
     display: flex;
 }
 .post3 .block_testimonials .title{
     margin-bottom: 20px;
-    background: var(--main-background);
+    background-color: #fff;
 }
 .post3 .block_testimonials .title span{
     display: inline-block;
