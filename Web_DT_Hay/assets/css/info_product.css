@@ -630,6 +630,7 @@ body {
 /* <!--THÔNG TIN SẢN PHẨM VÀ VIDEO SẢN PHẨM --> */
 .characteristic-videos{
     padding: 0px 20px;
+    margin-bottom: 50px;
 }
 .characteristic-videos .characteristic-l{
     width: 45%;
@@ -720,7 +721,7 @@ body {
     position: relative;
     overflow: hidden;
     max-height: 348px;
-    min-height: 348px;
+    min-height: 280px;
 }
 .characteristic-videos .video-r .video_one_block_body .video-item img{
     transition: all .3s ease-out;
@@ -728,7 +729,7 @@ body {
     height: auto;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -736,6 +737,7 @@ body {
     width: calc(100% + 6px);
     float: none;
     margin: 4px -3px 0px;
+    height: 100%;
 }
 .characteristic-videos .video-r .video_one_block_body .list_video .video_item{
     cursor: pointer;
@@ -743,23 +745,35 @@ body {
     margin-left: 3px;
     margin-right: 3px;
     float: left;
+    position: relative;
 }
 .characteristic-videos .video-r .video_one_block_body .list_video .video_item img{
+    margin-bottom: 0px;
     width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: 106px;
+}
+.characteristic-videos .video-r .video_one_block_body .play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.characteristic-videos .video-r .video_one_block_body .play-icon .bx{
+   font-size: 50px;
+   color: var(--main-color)
 }
 /* <!--END THÔNG TIN SẢN PHẨM VÀ VIDEO SẢN PHẨM --> */
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
-
-.post3 .block_testimonials {
-    display: block;
-    background-color: #fff;
-}
 
 .block_testimonials .content {
     display: flex;
 }
 .post3 .block_testimonials .title{
     margin-bottom: 20px;
+    background: var(--main-background);
 }
 .post3 .block_testimonials .title span{
     display: inline-block;
