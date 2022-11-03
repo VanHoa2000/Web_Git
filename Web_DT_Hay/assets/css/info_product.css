@@ -407,6 +407,10 @@ body {
 
 /* ------ PHẦN SẢN PHẨM ------- */
 
+.main_wrapper .product{
+    background: #fff;
+}
+
 /* TIÊU ĐỀ SẢN PHẨM */
 
 .product .product_name {
@@ -1147,6 +1151,10 @@ body {
 }
 .list_vertical .item-related .title_item a{
     color: #333;
+    transition: 0.2s all;
+}
+.list_vertical .item-related .title_item a:hover{
+    color: var(--blue-color);
 }
 .list_vertical .item-related .title_item .price{
     font-weight: bold;
@@ -1163,6 +1171,138 @@ body {
     font-size: 13px;
 }
 /* KẾT THÚC PHẦN LIST SẢN PHẨM SO SÁNH */
+ /* PHẦN MÔ TẢ SẢN PHẨM  */
+ .frame_b{
+    display: flex;
+
+ }
+ .frame_b .frame_b_l{
+    width: 73%;
+    padding: 20px;
+    padding-right: 40px;
+ }
+ .frame_b_l .product_tab_content{
+    padding: 10px;
+ }
+ .frame_b_l .product_tab_content .tab-title{
+    margin-top: 20px;
+    margin-bottom: 15px;
+ }
+ .frame_b_l .product_tab_content .tab-title span{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+ }
+ .frame_b_l .product_tab_content .description{
+    line-height: 27px;
+    margin-bottom: 10px;
+ }
+ .frame_b_l .product_tab_content .description .box-content-inner {
+    line-height: 27px;
+    font-size: 16px;
+    margin-bottom: 10px;
+ }
+ .frame_b_l .product_tab_content .description .box-content-inner img {
+    max-width: 100%;
+    height: auto !important;
+ }
+ .frame_b_l .product_tab_content .description .box-content-inner p{
+    line-height: 27px;
+    margin-bottom: 10px;
+    font-size: 16px !important;
+    text-align: justify;
+ }
+ .frame_b_l .product_tab_content .description .box-content-inner em{
+    font-style: italic;
+ }
+ .frame_b_l .product_tab_content .description .box-content-inner strong{
+    font-weight: bold;
+ }
+ .frame_b .frame_b_r{
+    width: 27%;
+    padding-right: 20px;
+   
+ }
+ .frame_b .frame_b_r .default_button2_stick{
+    position: relative;
+    border: 1px solid #ededed;
+    padding: 20px 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    max-width: 304px;
+    background: #fff;
+    
+ }
+ .frame_b .frame_b_r .default_button2_stick .pro-name{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+ .frame_b .frame_b_r .default_button2_stick .pro-price{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 28px;
+ }
+ .frame_b .frame_b_r .default_button2_stick .promotion-st{
+    border: 1px solid #ededed;
+    padding: 20px 15px 10px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+ .frame_b .frame_b_r .default_button2_stick .promotion-st label{
+    position: absolute;
+    top: -14px;
+    left: 16px;
+    background: #f00;
+    font-size: 15px;
+    padding: 2px 8px;
+    color: #fff;
+    border-radius: 12px;
+ }
+ .frame_b .frame_b_r .default_button2_stick .promotion-st p{
+    position: relative;
+    padding-left: 10px;
+    font-size: 13px;
+    margin-bottom: 9px;
+ }
+ .frame_b .frame_b_r .default_button2_stick .promotion-st p a{
+    color: #333;
+    text-decoration: none;
+ }
+ .frame_b .frame_b_r .default_button2_stick .promotion-st p i{
+    color: #4caf50;
+    font-size: 14px;
+    margin-right: 6px;
+ }
+ .frame_b .frame_b_r .default_button2_stick .promotion-st strong{
+    font-weight: bold;
+ }
+ .frame_b .frame_b_r .default_button2_stick .btn-stricker .item{
+    text-align: center;
+    background: red;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+ }
+ .frame_b .frame_b_r .default_button2_stick .btn-stricker .item:nth-child(2){
+    background: #ff5722;
+ }
+.default_button2_stick .hotline-call-buy-st{
+    text-align: center;
+}.default_button2_stick .hotline-call-buy-st a{
+    text-decoration: none;
+    color: #ef0000;
+    font-weight: bold;
+}
+  /* KẾT THÚC PHẦN MÔ TẢ SẢN PHẨM  */
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
 
 .block_testimonials .content {
