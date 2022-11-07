@@ -27,6 +27,10 @@ body {
     margin-top: 8px !important;
 }
 
+.pt-8{
+    padding-top: 8px;
+}
+
 .font-12{
     font-size: 12px !important;
 }
@@ -55,8 +59,14 @@ body {
 .block {
     display: block;
 }
+
 a{
     text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
 }
 
 /* ------ PHẦN NÚT NỔI --------------- */
@@ -486,6 +496,143 @@ a{
     box-sizing: border-box;
 }
 /* END */
+
+/* PHẦN SLIDE BANNER */
+
+.banner-cat {
+    margin-top: 15px;
+}
+
+.wrap-slide-cat {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.slide-cat {
+    width: 68%;
+}
+
+.banner-item {
+    width: calc(32% - 15px)
+}
+
+.banner-item a {
+    display: block;
+}
+
+.banner-item .item + .item {
+    margin-top: 10px;
+}
+
+/* END PHẦN SLIDE BANNER */
+
+/* -- PHẦN PRODUCE ----*/
+
+.products-cat {
+    padding: 15px 15px 20px;
+    margin-bottom: 35px;
+    background-color: #fff;
+}
+
+.field-title {
+    position: relative;
+}
+
+.field-title .title-name {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.field-title .title-name h1 {
+    display: block;
+    width: 231px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.multipe_fiter {
+    width: calc(100% - 231px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.multipe_fiter .field-area {
+    position: relative;
+}
+
+.multipe_fiter .field-area .list-filter {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #b1b1b147;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.multipe_fiter .field-area:hover,
+.filters_in_field_inner .item:hover i,
+.filters_in_field_inner .item:hover a{
+    color: #0183BF;
+    transition: 0.2s all ease;
+}
+
+.field-area .list-filter .field-name {
+    margin-right: 10px;
+}
+
+.field-area .list-filter i {
+    font-size: 11px;
+}
+
+.multipe_fiter .field-area .price {
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    width: 250px;
+    padding-top: 6px;
+    top: 30px;
+    left: 2px;
+}
+
+.multipe_fiter .field-area:hover .price {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-area .price .filters_in_field_inner {
+    padding: 10px;
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7
+}
+
+.filters_in_field_inner .item {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    cursor: pointer;
+    margin: 3px 0;
+    transition: 0.2s all ease;
+}
+
+.filters_in_field_inner i {
+    margin-right: 10px;
+    font-size: 26px;
+    color: #808080;
+}
+
+.filters_in_field_inner .item:hover .uncheck {
+    display: none;
+}
+
+.filters_in_field_inner .item:hover .checked {
+    display: block;
+}
+
+/* -- END PHẦN PRODUCE ------*/
 
 /* END CONTENT*/
 
