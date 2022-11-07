@@ -1124,6 +1124,84 @@ a{
    font-size: 50px;
    color: var(--main-color)
 }
+/* PHẦN XEM THÊM THÔNG TIN */
+.modal-menu-full-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: #000000a3;
+    z-index: 2;
+}
+.popup-characteristic .close{
+    position: absolute;
+    display: inline-block;
+    background: #fff;
+    right: -15px;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.popup-characteristic{
+    display: none;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #ffff;
+    width: 600px;
+    max-width: 90%;
+}
+.popup-characteristic .title-bg-r{
+    padding: 10px;
+    background: var(--main-color);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.popup-characteristic .table-condensed{
+    line-height: 26px;
+    height: 74vh;
+    overflow-y: scroll;
+}
+.popup-characteristic .table-condensed .table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+}
+.popup-characteristic .table-condensed .tr-0{
+    border-bottom: 1px solid #eeeeee61;
+    color: #333;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    background: #ededed;
+}
+.popup-characteristic .table-condensed .tr-1{
+    border-bottom: 1px solid #eeeeee61;
+    color: #333;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+.popup-characteristic .table-condensed .title_charactestic{
+    font-weight: bold;
+    padding: 8px 0px 7px 10px;
+    color: #000;
+    width: 40%;
+}
+.popup-characteristic .characteristic-l .top-info-detail .table-condensed .content_charactestic{
+    padding: 8px 10px 7px 0px;
+}
+/* KÊT THÚC PHẦN XEM THÊM THÔNG TIN */
 /* <!--END THÔNG TIN SẢN PHẨM VÀ VIDEO SẢN PHẨM --> */
 /* PHẦN LIST SẢN PHẨM SO SÁNH */
 .list_vertical{
@@ -1304,6 +1382,31 @@ a{
     text-decoration: none;
     color: #ef0000;
     font-weight: bold;
+}
+
+.readmore .closed{
+    text-align: center;
+    color: #333;
+    background: #f9f9f9;
+    padding: 10px 30px 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in 0;
+    display: inline-block;
+    border: 1px solid #e9e9e98a;
+}
+#readmore_desc{
+    text-align: center;
+}
+.description #box_content_info{
+    max-height: 400px;
+    transition: height 75ms;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.description .hidden{
+    display: none;
 }
   /* KẾT THÚC PHẦN MÔ TẢ SẢN PHẨM  */
 /*  ĐÁNH GIÁ VÀ COMMENT */
