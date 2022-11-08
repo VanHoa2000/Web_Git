@@ -512,7 +512,36 @@ img {
 .slide-cat {
     width: 68%;
 }
-
+.pav-slideShow .slick-arrow{
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    background: #3c3c3c85;
+    width: 30px;
+    height: 56px;
+}
+.pav-slideShow .slick-prev{
+    left: 0;
+    z-index: 1;
+}
+.pav-slideShow .slick-prev::before{
+    content: '‹';
+    font-family: none;
+    text-align: center;
+    font-size: 32px;
+    line-height: 10px;
+}
+.pav-slideShow .slick-next::before{
+    font-family: none;
+    content: '›';
+    text-align: center;
+    font-size: 32px;
+    line-height: 10px;
+}
+.pav-slideShow .slick-next{
+    right: 0;
+    z-index: 1;
+}
 .banner-item {
     width: calc(32% - 15px)
 }

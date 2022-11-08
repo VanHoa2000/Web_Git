@@ -37,6 +37,17 @@ $(document).ready(function(){
     slidesToScroll: 4,
   });
 });
+// reamle
+$(document).ready(function(){
+  $('.pav-slideShow').slick({
+    arrows:true,
+    dots: false,
+    speed: 1000,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed:1000,
+  });
+});
 
 
 
