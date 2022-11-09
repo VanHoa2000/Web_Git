@@ -593,7 +593,7 @@ body {
     transition: all .3s ease;
 }
 
-.product-image a img:hover {
+.slide-show-list .item:hover img {
     transform: scale(1.05);
 }
 
@@ -631,8 +631,11 @@ body {
     font-size: 12px;
 }
 
+.product-tab h3{
+    display: block;
+}
+
 h3 .name {
-    overflow: hidden;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -640,10 +643,12 @@ h3 .name {
     font-size: 14px;
     font-weight: normal;
     line-height: 17px;
-    height: 33px;
+    min-height: 33px;
+    padding: 0 10px;
+    transition: 0.2s ease-in-out all;
 }
 
-h3 .name:hover {
+.slide-show-list .item:hover .name {
     color: var(--blue-color);
 }
 
