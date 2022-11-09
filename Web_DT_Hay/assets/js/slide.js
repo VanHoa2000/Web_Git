@@ -24,18 +24,7 @@ $(document).ready(function () {
     asNavFor: ".slide-show-item",
     focusOnSelect: true,
   });
-  // product
-    $(".post2 .slide-show-list").slick({
-      slidesToShow: 5,
-      slidesToScroll: 5,
-    });
-    $(".wrapper-content-page .bot-block .tab-content .product-tab .slide-show-list").slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-    });
-  //end product
+    
   // slide realme
   $(".pav-slideShow").slick({
     arrows: true,
@@ -45,4 +34,16 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 1000,
   });
+  // product
+  $(".post2 .slide-show-list").slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  });
+  $(".wrapper-content-page .bot-block .tab-content .product-tab .slide-show-list").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  });
+//end product
 });
