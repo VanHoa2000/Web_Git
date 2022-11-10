@@ -63,6 +63,7 @@ body {
 a{
     text-decoration: none;
     color: #000;
+    transition: all 0.2s ease;
 }
 
 img {
@@ -246,7 +247,6 @@ img {
 }
 
 /*----------- KẾT THÚC PHẦN HEADER ----------*/
-
 /*----------- PHẦN CONTENT -----------*/
 
 #content {
@@ -424,292 +424,118 @@ img {
 }
 /* KẾT THÚC PHẦN MENU */
 
-/* PHẦN SLIDE BANNER */
+/* -- NỘI DUNG -- */
 
-.banner-cat {
-    margin-top: 15px;
-}
-
-.wrap-slide-cat {
+#content .main_wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
 }
 
-.slide-cat {
-    width: 68%;
-}
-.pav-slideShow .slick-arrow{
-    display: inline-block;
-    position: absolute;
-    margin: 0;
-    background: #3c3c3c85;
-    width: 30px;
-    height: 56px;
-}
-.pav-slideShow .slick-prev{
-    left: 0;
-    z-index: 1;
-}
-.pav-slideShow .slick-prev::before{
-    content: '‹';
-    font-family: none;
-    text-align: center;
-    font-size: 32px;
-    line-height: 10px;
-}
-.pav-slideShow .slick-next::before{
-    font-family: none;
-    content: '›';
-    text-align: center;
-    font-size: 32px;
-    line-height: 10px;
-}
-.pav-slideShow .slick-next{
-    right: 0;
-    z-index: 1;
-}
-.banner-item {
-    width: calc(32% - 15px)
+.main-area {
+    width: calc(100% - 290px);
+    padding-right: 20px;
 }
 
-.banner-item a {
+.main-area .news_home {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.main-area .news_home .img-title-cat {
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #EEE;
+}
+
+.news_home .img-title-cat span {
+    font-size: 17px;
+    padding-bottom: 4px;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* NỘI DUNG: HEADER */
+
+.main-area .news_home .news_header {
+    display: flex;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 15px;
+}
+
+.news_home .news_header .header_l{
+    width: 53%;
+    margin-bottom: 25px;
+}
+
+.news_home .frame_img{
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.news_home .frame_img .item-img {
     display: block;
 }
 
-.banner-item .item + .item {
+.news_home .item img {
+    transition: 0.2s ease all;
+}
+
+.news_home .item:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.news_header .header_l .title {
     margin-top: 10px;
+    font-size: 17px;
 }
 
-/* END PHẦN SLIDE BANNER */
-
-/* -- PHẦN PRODUCE ----*/
-
-.products-cat {
-    padding: 15px 15px 20px;
-    margin-bottom: 35px;
-    background-color: #fff;
-}
-
-.field-title {
-    position: relative;
-}
-
-.field-title .title-name {
-    display: flex;
-    align-items: center;
-    height: 36px;
-}
-
-.field-title .title-name h1 {
-    display: block;
-    width: 231px;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.multipe_fiter {
-    width: calc(100% - 231px);
-    display: flex;
-    justify-content: space-between;
-    height: 36px;
-}
-
-.multipe_fiter .field-area {
-    position: relative;
-}
-
-.multipe_fiter .field-area .list-filter {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    padding: 0 10px;
-    border: 1px solid #b1b1b147;
-    cursor: pointer;
-    transition: 0.2s all ease;
-}
-
-.multipe_fiter .field-area:hover,
-.filters_in_field_inner .item:hover i,
-.filters_in_field_inner .item:hover a{
-    color: #0183BF;
-    transition: 0.2s all ease;
-}
-
-.field-area .list-filter .field-name {
-    margin-right: 10px;
-}
-
-.field-area .list-filter i {
-    font-size: 11px;
-}
-
-.multipe_fiter .field-area .price {
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    width: 250px;
-    padding-top: 6px;
-    top: 30px;
-    left: 2px;
-}
-
-.multipe_fiter .field-area:hover .price {
-    display: flex;
-    flex-direction: column;
-}
-
-.field-area .price .filters_in_field_inner {
-    padding: 10px;
-    border-left: 1px solid #E7E7E7;
-    border-right: 1px solid #E7E7E7;
-    border-bottom: 1px solid #E7E7E7
-}
-
-.filters_in_field_inner .item {
-    display: flex;
-    height: 24px;
-    align-items: center;
-    cursor: pointer;
-    margin: 3px 0;
-    transition: 0.2s all ease;
-}
-
-.filters_in_field_inner i {
-    margin-right: 10px;
-    font-size: 26px;
-    color: #808080;
-}
-
-.filters_in_field_inner .item:hover .uncheck {
-    display: none;
-}
-
-.filters_in_field_inner .item:hover .checked {
-    display: block;
-}
-
-.multipe_fiter .order-select {
-    height: 30px;
-    background-color: #f6f6f694;
-    border: 1px solid #b1b1b10f;
-    color: #bdbdbd;
-    padding: 4px 10px;
-
-}
-
-.multipe_fiter .order-select:focus-visible {
-    outline: none;
-}
-
-/* PRODUCT FRAME */
-
-.products-cat-frame .products-grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -7px;
-}
-
-.products-cat-frame .products-grid .item {
-    width: calc(20% - 14px);
-    border: 1px solid #e7e7e77d;
-    margin: 7px;
-    padding-bottom: 10px;
-    overflow: hidden;
-}
-
-.product-image {
-    overflow: hidden;
-    position: relative;
-}
-
-.product-image a img{
-    transition: all .3s ease;
-}
-
-.frame_inner:hover .product-image img {
-    transform: scale(1.05);
-}
-
-.discount {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    background-color: #f7d704;
-    padding: 1px 8px;
-    border-radius: 9px;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.discount i {
-    color: #dc0000;
-    font-size: 18px;
-    margin-right: 2px;
-}
-
-.discount label {
-    color: #dc0000;;
-}
-
-.text_small_3 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ff6800;
-    border-radius: 4px;
-    padding: 4px 5px;
-    color: #fff;
-    font-size: 12px;
-}
-
-.frame_inner h3 .name{
-    text-align: center;
-    display: block;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 17px;
-    min-height: 33px;
-    transition: 0.2s ease-in-out all;
-    padding: 10px 10px 0 10px;
-}
-
-.frame_inner:hover h3 .name {
+.header_l .title a:hover {
     color: var(--blue-color);
 }
 
-.price_area {
+.news_header .header_l .summary {
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
+    color: #555;
+}
+
+.news_home .news_header .header_r{
+    width: 47%;
+    padding-left: 20px;
+}
+
+.news_header .header_r .header_r_inner {
     display: flex;
-    padding: 10px;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
-.price_current {
-    color: #dc0000;
-    font-size: 15px;
-    font-weight: bold;
+.header_r_inner .item {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
 }
 
-.price_old {
-    color: #929292;
-    font-size: 13px;
-    text-decoration: line-through;
+.header_r_inner .item_title{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
 }
 
-.frame_inner .rate-item {
-    font-size: 12px;
-    text-align: center;
-    min-height: 18px;
-    color: #ff9727;
+.header_r_inner .item_title:hover a {
+    color: var(--blue-color);
 }
 
-.frame_inner .rate-item .text-rate {
-    color: #929292;
+/* DANH SÁCH TIN TỨC */
+
+/* SIDE BAR */
+.right-col {
+    width: 290px;
 }
 
+/* ĐIỀU HƯỚNG */
 .pagination{
     text-align: center;
     margin-top: 20px;
@@ -758,7 +584,7 @@ img {
     border: 1px solid #eee;
 }
 
-/* -- END PHẦN PRODUCT ------*/
+/* -- END NỘI DUNG -- */
 
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
 
