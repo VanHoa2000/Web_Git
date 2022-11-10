@@ -498,7 +498,8 @@ body {
 .block-manufactories,
 .block_product_tabs .top-block,
 .top-block .right-nav,
-.block_product_tabs .fillter-price {
+.block_product_tabs .fillter-pric
+ {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -546,6 +547,7 @@ body {
 }
 
 .fillter-price {
+    display: flex;
     flex-grow: 1;
     width: 50%;
     height: 100%;
@@ -711,18 +713,59 @@ h3 .name {
     background-color: #fff;
     margin-bottom: 20px;
 }
-
-.bot-block {
-    display: flex;
-    justify-content: space-around;
-}
-
 .bot-block .banner {
     width: 217px;
     margin-top: 14px;
     margin-left: 14px;
+    float: left;
 }
-
+.bot-block .product-tab .slick-prev{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    background-color: #fff;
+    z-index: 3;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    padding: 3px 10px;
+    border: 1px solid #DDDCDC;
+}
+.bot-block .product-tab .slick-next{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background-color: #fff;
+    z-index: 3;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    padding: 3px 10px;
+    border: 1px solid #DDDCDC;
+}
+.bot-block .product-tab .slick-prev::before{
+    content: '‹';
+    font-family: none;
+    text-align: center;
+    font-size: 32px;
+    line-height: 10px;
+    color: black;
+}
+.bot-block .product-tab .slick-next::before{
+    font-family: none;
+    content: '›';
+    text-align: center;
+    font-size: 32px;
+    line-height: 10px;
+    color: black;
+}
+.bot-block .product-tab .slick-arrow{
+    opacity: 0;
+}
+.bot-block .product-tab .slide-show-list:hover .slick-arrow{
+    opacity: 1;
+}
+    
 /* -- KẾT THÚC PHẦN PRODUCT -- */
 
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */

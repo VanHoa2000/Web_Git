@@ -1,4 +1,10 @@
 //slide show
+// var $thumbs = $(".thumbs").attr("data-item");
+//   if ($thumbs <= 5) {
+//     $thumbs = false;
+//   } else {
+//     $thumbs = true;
+//   }
 $(document).ready(function () {
   $(".slide-show-item").slick({
     dots: true,
@@ -8,23 +14,16 @@ $(document).ready(function () {
     arrows: false,
     asNavFor: ".thumbs",
   });
-  var $thumbs = $(".thumbs").attr("data-item");
-  if ($thumbs <= 5) {
-    $thumbs = false;
-  } else {
-    $thumbs = true;
-  }
   $(".thumbs").slick({
     dots: false,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 5,
     arrows: false,
-    infinite: $thumbs,
+    infinite: false,
     asNavFor: ".slide-show-item",
     focusOnSelect: true,
   });
-    
   // slide realme
   $(".pav-slideShow").slick({
     arrows: true,
@@ -34,12 +33,13 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 1000,
   });
-  // product
+  // // product
   $(".post2 .slide-show-list").slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
   });
-  $(".wrapper-content-page .bot-block .tab-content .product-tab .slide-show-list").slick({
+
+  $(".wrapper-content-page .slide-show-list").slick({
     infinite: true,
     speed: 300,
     slidesToShow: 4,
