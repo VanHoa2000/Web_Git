@@ -1487,6 +1487,44 @@
                         </div>
                     </div>
                     <div class="frame_b_r">
+                        <style>
+                            .frame_b_r{
+                                position: relative;
+                            }
+                            #sticky_right{
+                             border: 1px solid blue;
+                             position: relative;
+                                top: unset;
+                                bottom: unset;
+                                bottom: 20px;
+                                /* opacity: 0; */
+                            }
+                            #sticky_right.fixed{
+                                position: fixed;
+                                top: 75px;   
+                            }
+                            #sticky_right.absolute{
+                                position: absolute;
+                                bottom: 20px;
+                            }
+                            #start-fixed{
+                                border: 1px solid green;
+                                height: 10px;
+                                width: 100%;
+                                position: absolute;
+                                top: 20px;
+                            }
+                            #stop-fixed{
+                                border: 1px solid red;
+                                height: 10px;
+                                width: 100%;
+                                position: absolute;
+                                bottom: 20px;
+                            }
+                        </style>
+                        <div id="start-fixed">
+
+                        </div>
                         <div class="default_button2_stick" id="sticky_right">
                             <div class="pro-name">
                                 Xiaomi Mi 11 Lite 5G NE chính hãng
@@ -1520,6 +1558,9 @@
                                 <a href="#">0818.215.215 - 0815.208.208</a>
                                 <span>để được tư vấn</span>
                             </div>
+                        </div>
+                        <div id="stop-fixed">
+
                         </div>
                     </div>
                 </div>
