@@ -4,22 +4,22 @@ $(document).ready(function() {
         $('.popup-characteristic').css("display","block");
         $('.modal-menu-full-screen').css("display","block");
     });
-});
-// nút close
-$(document).ready(function() {
+    // nút close
     $('.popup-characteristic .close').click(function() {
         $('.popup-characteristic').css("display","none");
         $('.modal-menu-full-screen').css("display","none");
     });
-});
-// readmore
-$(document).ready(function() {
+    //end
+    // readmore
     $('#readmore_desc').click(function() {
-       $readmore=$('#box_content_info').css({"max-height":"none","overflow":"inherit"}); 
-    });
+        $readmore=$('#box_content_info').css({"max-height":"none","overflow":"inherit"}); 
+     });
+     $('#readmore_desc').click(function() {
+        $readmore=$('#box_content_info').css({"max-height":"none","overflow":"inherit"}); 
+     });
+     //end
+     // fix famre left
+     
 });
-$(document).ready(function() {
-    $('#readmore_desc').click(function() {
-       $readmore=$('#box_content_info').css({"max-height":"none","overflow":"inherit"}); 
-    });
-});
+
+
