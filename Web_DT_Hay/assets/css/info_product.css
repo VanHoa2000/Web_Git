@@ -1580,8 +1580,7 @@ a{
 }
 .comment-item .comment-name{
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 .comment-item .comment-name .avatar{
     width: 25px;
