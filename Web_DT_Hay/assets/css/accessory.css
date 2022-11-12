@@ -28,7 +28,7 @@ body {
 }
 
 .pt-8{
-    padding-top: 8px;
+    padding-top: 8px !important;
 }
 
 .font-12{
@@ -502,7 +502,8 @@ img {
 .field-title .title-name {
     display: flex;
     align-items: center;
-    height: 36px;
+    min-height: 36px;
+    line-height: 36px;
 }
 
 .field-title .title-name h1 {
@@ -517,6 +518,7 @@ img {
     display: flex;
     justify-content: space-between;
     height: 36px;
+    align-self: flex-start;
 }
 
 .multipe_fiter .field-area {
@@ -524,7 +526,7 @@ img {
 }
 
 .multipe_fiter .field-area .list-filter {
-    display: flex;
+    display: none;
     align-items: center;
     height: 30px;
     padding: 0 10px;
