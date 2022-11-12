@@ -1384,6 +1384,42 @@ a{
     color: #ef0000;
     font-weight: bold;
 }
+/* phần js fixed */
+.frame_b_r{
+    position: relative;
+}
+#sticky_right{
+    position: relative;
+    top: unset;
+    bottom: unset;
+}
+#sticky_right.fixed{
+    position: fixed;
+    top: 50px;   
+}
+#sticky_right.absolute{
+    position: absolute;
+}
+#sticky_right.absolute.fixed{
+    position: fixed;
+    top: 75px;
+    width: inherit;   
+}
+#start-fixed{
+   
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+#stop-fixed{
+    
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+/* end */
 
 .readmore .closed{
     text-align: center;
