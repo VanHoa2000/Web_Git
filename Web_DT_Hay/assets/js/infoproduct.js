@@ -11,11 +11,19 @@ $(document).ready(function () {
     });
     //end
     // readmore
-    $('#readmore_desc').click(function () {
-        $readmore = $('#box_content_info').css({ "max-height": "none", "overflow": "inherit" });
+    $view = $('#box_content_info');
+    $read=$('.readmore');
+    $hideview=('#readany_desc');
+
+    $($read).click(function () {
+        // set css cho clas
+        $view.css({ "max-height": "none", "overflow": "inherit" });
+        // thay doi class
+        $read.toggleClass("hide")
     });
-    $('#readmore_desc').click(function () {
-        $readmore = $('#box_content_info').css({ "max-height": "none", "overflow": "inherit" });
+    $($hideview).click(function () {
+        // set css cho clas
+        $view.css({ "max-height": "400", "overflow": "hidden" });
     });
     //end
     // fix famre left

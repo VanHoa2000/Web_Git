@@ -1429,12 +1429,19 @@ a{
     border-radius: 5px;
     position: relative;
     cursor: pointer;
-    transition: all 0.2s ease-in 0;
+    transition: all 0.2s ease-in;
     display: inline-block;
     border: 1px solid #e9e9e98a;
 }
-#readmore_desc{
+.readmore{
     text-align: center;
+}
+.readmore .closed:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.readmore .closed i{
+    font-size: 20px;
 }
 .description #box_content_info{
     max-height: 400px;
@@ -1442,7 +1449,11 @@ a{
     overflow: hidden;
     margin-bottom: 20px;
 }
-.description .hidden{
+view{
+    max-height: none;
+    overflow: inherit;
+}
+.hide{
     display: none;
 }
   /* KẾT THÚC PHẦN MÔ TẢ SẢN PHẨM  */
