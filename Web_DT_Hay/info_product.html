@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../Web_DT_Hay/assets/js/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../Web_DT_Hay/assets/js/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/info_product.css">
+    <link rel="stylesheet" href="./assets/css/reponsive/info_product.css">
     <title>Document</title>
 </head>
 
@@ -17,7 +18,7 @@
     <!-- NÚT NỔI -->
     <div class="fixed-buttons">
         <div class="left-button">
-            <div class="center-button">
+            <div class="center-button mobile-hide">
                 <div class="youtube"><i class='bx bxl-youtube'></i></div>
                 <div class="facebook"><i class='bx bxl-facebook'></i></div>
                 <div class="twitter"><i class='bx bxl-twitter'></i></div>
@@ -25,8 +26,25 @@
             </div>
             <div class="bottom-button"><i class='bx bxl-messenger'></i></div>
         </div>
-        <div class="right-button">
+        <div class="right-button mobile-hide">
             <a href="#"><i class='bx bx-chevron-up'></i></a>
+        </div>
+        <div class="mobile-call-button hide">
+            <i class='bx bxs-phone'></i>
+        </div>
+        <!-- PHẦN MUA RIÊNG CHO MOBILE -->
+        <div class="fix-btn-buy hide">
+            <div class="flex-buy-btn">
+                <div class="item-shopcart">
+                    <i class='bx bx-cart-alt'></i>
+                    <p>Giỏ hàng</p>
+                </div>
+                <div class="all-btn-item">
+                    <div class="item"><span>Thêm vào giỏ hàng</span></div>
+                    <div class="item"><span>Mua trả góp</span></div>
+                    <div class="item"><span>Mua ngay</span></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- PHẦN HEADER-->
@@ -72,6 +90,9 @@
                     <div class="font-16">Giỏ Hàng</div>
                 </div>
             </div>
+            <div class="menu_mobile hide">
+                <i class='bx bx-menu'></i>
+            </div>
         </div>
     </div>
     <div class="modal-menu-full-screen"></div>
@@ -90,7 +111,7 @@
         </div>
         <!-- KẾT THÚC PHẦN ĐƯỜNG DẪN PRODUCT -->
         <!-- PHẦN MENU -->
-        <div class="container">
+        <div class="container menu">
             <div class="top_menu_orther">
                 <div class="menu__left">
                     <div class="menu__show">
@@ -503,7 +524,7 @@
                 <!-- TIÊU ĐỀ -->
                 <div class="product_name">
                     <h1>Xiaomi Redmi K50 Gaming </h1>
-                    <div class="text_small">
+                    <div class="text_small text_small_dt">
                         Sẵn Tiếng Việt, không cần chờ 7 ngày
                     </div>
                     <span class="rate">
@@ -518,6 +539,7 @@
                 <!-- HÌNH ẢNH SẢN PHẨM -->
                 <div class="product-frame">
                     <div class="frame-left">
+                        <div class="frame-left__img_hidden"></div>
                         <div class="frame-left__img">
                             <img src="./assets/images/product/k50gxam_1659788203.jpg" alt="">
                         </div>
