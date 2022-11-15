@@ -125,6 +125,21 @@ body {
     color: #000;
     background-color: var(--main-color);
 }
+.mobile-call-button i {
+    cursor: pointer;
+    padding: 6px;
+    position: fixed;
+    bottom: 22%;
+    right: 0px;
+    z-index: 10;
+    background-color: #ff0000bd;
+    border: 2px solid #fff;
+    font-size: 30px;
+    border-radius: 50px;
+    color: white;
+    transition: 0.2s ease-in-out all;
+}
+
 
 /* ------ END --------------- */
 
