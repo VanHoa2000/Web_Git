@@ -126,13 +126,22 @@
         font-size: 13px;
     }
      .bot-block .product-tab .item .price_area{
-        font-size: 13px;
+        font-size: 12px;
+        padding: 5px 5px 0px;
+    }
+    .bot-block .product-tab .item  .rate_item{
+        text-align: center;
+        color: #929292;
+        font-size: 12px;
+        margin-top: 9px;
+        height: 18px;
     }
      .bot-block .product-tab .item .price_current{
-        font-size: 13px;
+        font-size: 12px;
+        margin-right: 5px;
     }
      .bot-block .product-tab .item .price_old{
-        font-size: 13px;
+        font-size: 12px;
     }
      .bot-block .product-tab .text_small_2{
         padding: 0;
