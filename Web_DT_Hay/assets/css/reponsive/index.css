@@ -1,0 +1,206 @@
+:root {
+    --main-color: #ff0000;
+    --main-background: #f6f6f6;
+    --blue-color: #288ad6;
+    --black-color:#333;
+}
+@media only screen and (max-width: 46.1875em) {
+
+    /* CLASS CHUNG */
+
+    .mobile-hide {
+        display: none !important;
+    }
+    .right-button{
+        display: none;
+    }
+
+    /* --CONTENT-- */
+    #content {
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 54px;
+    }
+
+    /* NÚT NỔI */
+    
+    .bottom-button {
+        right: 0;
+        left: auto;
+        bottom: 30%;
+    }
+
+    .bottom-button i {
+        font-size: 42px;
+    }
+
+    .mobile-call-button,
+    .fix-btn-buy {
+        display: block;
+    }
+
+    /* HEADER */
+    #header {
+        padding: 6px 0;
+    }
+
+    .header__contact{
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .header__contact-text {
+        display: none;
+    }
+
+    .header__search {
+        margin: 0px 10px;
+    }
+
+    .header__right-option {
+        display: none;
+    }
+    .header__shopcart {
+        display: none;
+    }
+    .menu_mobile {
+        display: initial;
+        padding-right: 10px;
+        font-size: 40px;
+    }
+    /* content */
+    .product__menu .menu{
+        display: none;
+    }
+    .slideshow__countdown{
+      display: block;
+      max-width: 100%;
+      margin-top: 8px;
+    }
+    /* end */
+    /* slideshow */
+    .slide-show{
+        width: 100%;
+    }
+    /* end */
+    /* condownt */
+        .countdown {
+         display: none;
+        }
+        .post0 img {
+            width: 100%;
+        }
+     /* end */
+     /* post 1 */
+    .post1 .block-manufactories{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .post1 .block-manufactories .item{
+        width: calc(100% / 3 - 10px);
+        margin: 0px 5px 5px;
+        padding: 6px;
+        border: 1px solid var(--main-background);
+    }
+    .block-manufactories .item:nth-child(5){
+        display: block;
+    }
+    .block-manufactories .item:nth-child(6){
+        display: block;
+    }
+    .post2 .right-nav{
+        display: none;
+    }
+    .post2 .top-block{
+        display: block;
+    }
+     .top-block .title-block{
+        font-size: 14px;
+    }
+    .bot-block .product-tab .item {
+        margin: 0 3px;
+        width: 152px!important;
+    }
+     .bot-block .product-tab .item .name{
+        font-size: 13px;
+    }
+     .bot-block .product-tab .item .price_area{
+        font-size: 13px;
+    }
+     .bot-block .product-tab .item .price_current{
+        font-size: 13px;
+    }
+     .bot-block .product-tab .item .price_old{
+        font-size: 13px;
+    }
+     .bot-block .product-tab .text_small_2{
+        padding: 0;
+    }
+     .bot-block .product-tab .text_small_2 span{
+        padding: 2px 5px;
+    }
+    /* end */
+    .bot-block .banner{
+        display: none;
+    }
+    /* review nói về điện thoại hay */
+    .post3 .block_testimonials .title p{
+        display: none;
+        
+    }
+    .post3 .block_testimonials .title span{
+        font-size: 14px;
+        width: 300px;
+    }
+    .post3 .block_testimonials .content_wrap{
+        overflow-x: auto;
+        
+    }
+    .post3 .block_testimonials .content{
+        width: 1060px;
+    }
+    /* end */
+    /* <!-- PHẦN NEWS & VIDEO --> */
+    .post4 .content_wrap{
+        overflow-x: auto;
+
+    }
+    .post4 .content{
+        width: 920px;
+    }
+    /* end */
+    /* footer */
+    #footer{
+        padding: 30px 15px 20px;
+        border-radius: 10px;
+    }
+    .footer__top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .footer__menu .level0 ul{
+        display: none;
+    }
+    .footer__menu .level0 {
+        border: 1px solid #e3e3e3;
+        margin-bottom: 10px;
+    }
+    .footer__menu .level0 a{
+        margin-bottom: 0;
+        padding: 8px;
+    }
+    .address__footer{
+        width: 100%;
+    }
+    /* end */
+}

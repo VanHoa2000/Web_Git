@@ -52,6 +52,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          autoplay: false,
+          infinite:false,
         },
       },
     ],
@@ -68,6 +70,8 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          autoplay: false,
+          infinite:false,
         },
       },
     ],

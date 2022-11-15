@@ -131,7 +131,7 @@ body {
 /*----------------- PHẦN HEADER ---------------*/
 
 /* end */
-.header_wrapper {
+#header {
     background-color: var(--main-color);
     color: #fff;
     padding: 12px 0;
@@ -145,16 +145,16 @@ body {
 .header__header-body {
     max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     margin: auto;
     align-items: center;
 }
 
-.header__contact {
+.header__contact{
     text-decoration: none;
     color: #fff;
     display: flex;
-    align-items: center;
+    align-items: c enter;
     padding-right: 40px;
 }
 
@@ -173,6 +173,7 @@ body {
     display: block;
     margin: 0 36px;
     position: relative;
+    overflow: hidden;
 }
 
 .header__input-search {
@@ -186,7 +187,10 @@ body {
 
 .header__search-icon {
     cursor: pointer;
+    border-radius: 30px;
     position: absolute;
+    z-index: 10;
+    background-color: #fff;
     top: 0;
     right: 0;
     color: #000;
@@ -197,20 +201,8 @@ body {
 }
 
 .header__right-option {
-    position: relative;
-}
-
-.header__right-option .header__phone {
-    float: left;
-    margin-right: 15px;
-}
-
-.header__right-option .header__merchant {
-    float: left;
-}
-
-.header__right-option:hover .wrapper_content .fix_content {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__phone,
@@ -219,7 +211,6 @@ body {
     display: flex;
     align-items: center;
     margin-left: 24px;
-    cursor: pointer;
 }
 
 .header__right-icon {
@@ -232,6 +223,8 @@ body {
     align-items: center;
     margin-right: 8px;
 }
+
+/*----------- KẾT THÚC PHẦN HEADER ----------*/
 
 .header__header-body .wrapper_content {
     width: 440px;
@@ -311,79 +304,6 @@ body {
 }
 .sb-toggle-left{
     display: none;
-}
-/* responve mobile*/
-@media screen and (max-width: 990px) {
-    .header_wrapper {
-       max-width: 100%;
-    }
-    .header__header-body{
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact-icon {
-        font-size: 30px;
-        margin-left: 15px;
-       
-    }
-    .header__contact{
-        padding: 0;
-        display: block;
-
-    }
-    .header__contact-text {
-        display: none;
-    }
-    
-    .header__search {
-        width: 100%;
-        position: relative;
-        margin: 0;
-    }
-    
-    .header__input-search {
-        width: 100%;
-        padding: 12px 8px;
-        border-radius: 5px;
-        border: none;
-        font-style: italic;
-        outline: none;
-        font-size: 13px;
-        position: relative;
-    }
-    
-    .header__search-icon {
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: #000;
-        font-size: 20px;
-        display: flex;
-        padding: 11px;
-        align-items: center;
-    }
-    
-    .header__right-option {
-        display: none;
-    }
-    
-    .header__phone,
-    .header__merchant,
-    .header__shopcart {
-        display: none;
-    }
-    .sb-toggle-left{
-        display: block;
-        position: absolute;
-        right: 0;
-        margin-right: 15px;
-    }
-    .sb-toggle-left i{
-        font-size: 40px;
-    }
 }
 
 /*----------- KẾT THÚC PHẦN HEADER ----------*/
@@ -550,18 +470,6 @@ body {
     background-color: #EBEBEB;
     border-radius: 10px;
 }
-/* mobile */
-@media screen and (max-width: 990px)  {
-    .product__menu .menu{
-        display: none;
-    }
-    .slideshow__countdown{
-      display: block;
-      max-width: 100%;
-      margin-top: 8px;
-    }
-}
-/* end */
 /* KẾT THÚC PHẦN MENU */
 /* PHẦN SLIDE */
 .slide-show {
@@ -639,13 +547,6 @@ body {
 .slide-show .thumbs .item.slick-current a {
     color: var(--main-color);
 }
-/* mobile */
-@media screen and (max-width: 990px)  {
-   .slide-show{
-    width: 100%;
-   }
-}
-/* end */
 /* PHẦN BANNER */
 .countdown {
     position: relative;
@@ -663,17 +564,6 @@ body {
     max-width: 100%;
     height: 109px;
 }
-/* mobile */
-@media screen and (max-width: 990px)  {
-    .countdown {
-     display: none;
-    }
-    .post0 img {
-        width: 100%;
-    }
- }
- /* end */
-
 /* KẾT THÚC PHẦN BANNER */
 /* KẾT THÚC PHẦN SLIDE */
 /* -- KẾT THÚC PHẦN SLIDE -- */
@@ -949,57 +839,6 @@ h3 .name {
     border-radius: 3px;
     padding: 8px;
 }
-/* mobile */
-@media screen and (max-width: 990px)  {
-    .post1 .block-manufactories{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    .post1 .block-manufactories .item{
-        width: calc(100% / 3 - 10px);
-        margin: 0px 5px 10px;
-        padding: 0;
-        border: 1px solid var(--main-background);
-    }
-    .block-manufactories .item:nth-child(5){
-        display: block;
-    }
-    .block-manufactories .item:nth-child(6){
-        display: block;
-    }
-    .post2 .right-nav{
-        display: none;
-    }
-     .top-block{
-        display: block;
-    }
-     .top-block .title-block{
-        font-size: 14px;
-    }
-     .bot-block .product-tab .item {
-        margin: 0;
-    }
-     .bot-block .product-tab .item .name{
-        font-size: 13px;
-    }
-     .bot-block .product-tab .item .price_area{
-        font-size: 13px;
-    }
-     .bot-block .product-tab .item .price_current{
-        font-size: 13px;
-    }
-     .bot-block .product-tab .item .price_old{
-        font-size: 13px;
-    }
-     .bot-block .product-tab .text_small_2{
-        padding: 0;
-    }
-     .bot-block .product-tab .text_small_2 span{
-        padding: 2px 5px;
-    }
- /* end */
 /*-- KẾT THÚC PHẦN SẢN PHẨM BÁN CHẠY --*/
 
 /* -- PHẦN PRODUCT -- */
@@ -1067,11 +906,6 @@ h3 .name {
 .bot-block .product-tab .slide-show-list:hover .slick-arrow {
     opacity: 1;
 }
-@media screen and (max-width: 990px)  {
-    .bot-block .banner{
-        display: none;
-    }
- }
  /* end */
 /* -- KẾT THÚC PHẦN PRODUCT -- */
 
@@ -1156,18 +990,6 @@ h3 .name {
     padding: 12px 12px 0px;
     box-sizing: border-box;
 }
-/* mobile */
-@media screen and (max-width: 990px)  {
-    .post3 .block_testimonials .title p{
-        display: none;
-        
-    }
-    .post3 .block_testimonials .title span{
-        font-size: 14px;
-        width: 300px;
-    }
-}
-/* end */
 /* END */
 /* PHẦN VIDEO TIN TỨC */
 .post4 {
