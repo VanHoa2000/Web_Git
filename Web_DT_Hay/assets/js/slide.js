@@ -23,6 +23,15 @@ $(document).ready(function () {
     infinite: false,
     asNavFor: ".slide-show-item",
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
   });
   // slide realme
   $(".pav-slideShow").slick({
@@ -37,6 +46,15 @@ $(document).ready(function () {
   $(".post2 .slide-show-list").slick({
     slidesToShow: 5,
     slidesToScroll: 5,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   });
 
   $(".wrapper-content-page .slide-show-list").slick({
@@ -44,6 +62,15 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
   });
 //end product
 });
