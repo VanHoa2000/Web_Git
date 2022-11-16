@@ -581,13 +581,14 @@ a{
     color: var(--main-color);
 }
 
-.frame-left__hit-share {
+.frame-left__hit-share,
+.mobile-product-info .hit-share {
     display: flex;
     margin-top: 15px;
     justify-content: center;
 }
 
-.frame-left__hit-share .fb-item{
+.fb-item{
     display: flex;
     padding: 3px 10px;
     width: 90px;
@@ -598,12 +599,12 @@ a{
     color: #fff;
 }
 
-.frame-left__hit-share .fb-text{
+.fb-text{
     font-size: 11px;
     font-weight: bold;
 }
 
-.frame-left__hit-share .fb-quantity {
+.fb-quantity {
     font-size: 11px;
 }
 
@@ -612,6 +613,7 @@ a{
     line-height: 1.6;
     padding-left: 20px;
     text-align: justify;
+    color: #565656;
 }
 
 .frame-left__banner {
@@ -1289,10 +1291,13 @@ a{
 /* KÊT THÚC PHẦN XEM THÊM THÔNG TIN */
 /* <!--END THÔNG TIN SẢN PHẨM VÀ VIDEO SẢN PHẨM --> */
 /* PHẦN LIST SẢN PHẨM SO SÁNH */
-.list_vertical{
-    width: 100%;
-    display: flex;
+.product-frame__list-product {
     padding: 0px 20px;
+    width: 100%;
+}
+
+.list_vertical{
+    display: flex;
 }
 .list_vertical .item-related{
     width: calc(100% / 4 - 10px);
@@ -1617,6 +1622,7 @@ view{
     width: 200px;
     padding: 10px;
     color: #fff;
+    border: 1 px solid var(--blue-color);
     background-color: var(--blue-color);
     text-align: center;
     border-radius: 5px;
