@@ -145,6 +145,11 @@
     
     /* FRAME CENTER */
 
+    .frame-center .mobile-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
     .product-frame .frame-center  {
         width: 100%;
         padding-left: 10px;
@@ -155,12 +160,131 @@
         font-size: 22px;
     }
 
-    .list_vertical{
-        overflow-x: scroll;
+    .attributes .ground-extend-item {
+        flex-direction: column;
+        align-items: initial;
+        padding-bottom: 0px;
+    }
+
+    .attributes .item-extend-name {
+        width: calc(33.3333% - 12px);
+    }
+
+    .frame-center .promotion  {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .frame-center .row-btn + .row-btn {
+        flex-direction: column;
+    }
+
+    .frame-center .row-btn .btn-buy {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .frame-center .row-btn .postpaid {
+        margin-bottom: 10px;
+    }
+
+    .mobile-product-info {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .mobile-product-info .produce-info {
+        line-height: 22px;
+        color: #565656;
+    }
+
+    /* FRAME RIGHT */
+
+    .product-frame .frame-right {
+        display: none;
+    }
+
+    /* <!--THÔNG TIN SẢN PHẨM VÀ VIDEO SẢN PHẨM --> */
+
+    .characteristic-videos {
+        display: block;
+        height: auto;
+    }
+
+    .characteristic-videos .characteristic-l,
+    .characteristic-videos .video-r {
+        float: none;
+        width: 100%;
+    }
+
+    .characteristic-videos .video-r .video_one_block_body .video-item {
+        min-height: auto;
+    }
+
+    .characteristic-videos .video-r {
+        margin-top: 20px;
+    }
+
+    .characteristic-videos .video-r .video_one_block_body .video-item img {
+        position: initial;
+        transform: none;
+    }
+
+    .characteristic-videos .video-r .video_one_block_body .list_video {
+        display: flex;
+    }
+
+    .characteristic-videos .video-r .video_one_block_body .list_video .video_item {
+        float: none;
+    }
+
+    /* FRAME BOT */
+    .frame_b {
+        display: block;
+    }
+
+    .frame_b .frame_b_l {
+        width: 100%;
+        padding: 0;
     }
 
     .frame_b_r {
         display: none;
+    }
+
+    /* ĐÁNH GIÁ VÀ COMMENT */
+    .tab_content_bottom .toprt .crt {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .tab_content_bottom .toprt .crt .rcrt {
+        width: 100%;
+        border-right: none;
+    }
+
+    .tab_content_bottom .toprt .crt .r {
+        padding-left: 0;
+        font-size: 11px;
+    }
+
+    .tab_content_bottom .toprt .crt .r .t {
+        font-size: 12px;
+    }
+
+    .tab_content_bottom .toprt .crt .bcrt {
+        width: 100%;
+    }
+
+    .tab_content_bottom .toprt .crt .bcrt a {
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        color: var(--main-color);
+        border: 1 px solid var(--main-color);
     }
 
     /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
