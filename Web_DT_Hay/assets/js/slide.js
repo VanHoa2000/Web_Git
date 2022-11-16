@@ -49,12 +49,7 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 990,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          autoplay: false,
-          infinite:false,
-        },
+        settings: "unslick",
       },
     ],
   });
@@ -67,12 +62,7 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 990,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          autoplay: false,
-          infinite:false,
-        },
+        settings:"unslick",
       },
     ],
   });

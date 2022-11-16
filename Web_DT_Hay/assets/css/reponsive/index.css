@@ -37,7 +37,9 @@
     .fix-btn-buy {
         display: block;
     }
-
+    .center-button{
+        display: none;
+    }
     /* HEADER */
     #header {
         padding: 6px 0;
@@ -71,12 +73,18 @@
     .mega_menu_mb{
         width: 86%;
     }
+   
     .mega_menu_mb .highlight{
         width: 86%;
+    
+    }
+    .toggle_parent.active+.highlight{
+        left: 0;
+        top:58px;
     }
     .menu_show{
         left: 0;
-        top:58px
+        top:58px;
     }
     .mega_menu_mb .close_all{
         position: absolute;
@@ -104,6 +112,10 @@
     /* slideshow */
     .slide-show{
         width: 100%;
+        margin-bottom: 10px;
+    }
+    .thumbs {
+        display: none;
     }
     /* end */
     /* condownt */
@@ -142,6 +154,16 @@
      .top-block .title-block{
         font-size: 14px;
     }
+    .bot-block{
+        overflow-x: auto;
+    }
+    .bot-block .tab-content{
+        width: 1060px;
+    }
+    .product-tab .slide-show-list{
+        justify-content: flex-start;
+        margin: 0;
+    }
     .bot-block .product-tab .item {
         margin: 0 3px;
         width: 152px!important;
@@ -178,6 +200,9 @@
         display: none;
     }
     /* review nói về điện thoại hay */
+    .post3 .block_testimonials{
+        margin-bottom: 20px;
+    }
     .post3 .block_testimonials .title p{
         display: none;
         
@@ -197,7 +222,7 @@
     /* <!-- PHẦN NEWS & VIDEO --> */
     .post4 .content_wrap{
         overflow-x: auto;
-
+        
     }
     .post4 .content{
         width: 920px;
