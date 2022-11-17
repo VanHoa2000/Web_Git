@@ -78,6 +78,21 @@
         width: 86%;
     
     }
+    .mega_menu_mb a{
+        color: #333;
+    }
+    .mega_menu_mb i{
+        color: #333;
+    }
+    .mega_menu_mb .highlight .back_icon{
+        position: absolute;
+        left: 0;
+        margin-left: 30px;  
+        top: 25%;
+    }
+    .mega_menu_mb .highlight i{
+        font-size: 30px;
+    }
     .toggle_parent.active+.highlight{
         left: 0;
         top:58px;
