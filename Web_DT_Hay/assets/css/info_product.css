@@ -60,6 +60,10 @@ a{
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 /* ------ PHẦN NÚT NỔI --------------- */
 
 .center-button {
@@ -1770,11 +1774,11 @@ view{
     font-size: 12px;
     margin-top: 2px;
 }
-.info_comment .pagination{
+.pagination {
     text-align: center;
     margin-top: 20px;
 }
-.info_comment .pagination .current{
+.pagination .current{
     background: none repeat scroll 0 0 var(--main-color);
     color: #FFFFFF;
     border: 1px solid var(--main-color);
@@ -1783,7 +1787,7 @@ view{
     margin-left: 6px;
     padding: 6px 12px;
 }
-.info_comment .pagination .other-page{
+.pagination .other-page{
     background: none repeat scroll 0 0 #ffffff;
     color: #4C4C4C;
     display: inline-block;
@@ -1794,7 +1798,7 @@ view{
     border: 1px solid #eee;
 }
 
-.info_comment .pagination b{
+.pagination b{
     background: none repeat scroll 0 0 #ffffff;
     color: #4C4C4C;
     display: inline-block;
@@ -1805,7 +1809,7 @@ view{
     border: 1px solid #eee;
 }
 
-.info_comment .pagination a{
+.pagination a{
     background: none repeat scroll 0 0 #ffffff;
     color: #4C4C4C;
     display: inline-block;
@@ -1879,9 +1883,7 @@ view{
 /*  KẾT THÚC ĐÁNH GIÁ VÀ COMMENT */
 /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
 
-.block_testimonials .content {
-    display: flex;
-}
+
 .post3 .block_testimonials .title{
     margin-bottom: 20px;
     background-color: #fff;
