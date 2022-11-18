@@ -1,0 +1,182 @@
+:root {
+    --main-color: #ff0000;
+    --main-background: #f6f6f6;
+    --blue-color: #288ad6;
+    --black-color:#333;
+}
+@media only screen and (max-width: 46.1875em) {
+    /* CLASS CHUNG */
+
+    .mobile-hide {
+        display: none !important;
+    }
+    .right-button{
+        display: none;
+    }
+
+    /* --CONTENT-- */
+    #content {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    /* NÚT NỔI */
+    .bottom-button {
+        right: 0;
+        left: auto;
+        bottom: 30%;
+    }
+
+    .bottom-button i {
+        font-size: 42px;
+    }
+
+    .mobile-call-button,
+    .fix-btn-buy {
+        display: block;
+    }
+    .center-button{
+        display: none;
+    }
+    /* HEADER */
+    #header {
+        padding: 6px 0;
+    }
+
+    .header__contact{
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .header__contact-text {
+        display: none;
+    }
+
+    .header__search {
+        margin: 0px 10px;
+    }
+
+    .header__right-option {
+        display: none;
+    }
+    .header__shopcart {
+        display: none;
+    }
+    .menu_mobile {
+        display: initial;
+        padding-right: 10px;
+        font-size: 40px;
+    }
+    /* Menu */
+    .top_menu_orther{
+        display: none !important;
+    }
+    /* content */
+    #content .container{
+        margin: 0;
+        
+    }
+    .breadcrumbs__wrapper .breadcrumb{
+        margin: 10px 0;
+    }
+    .banner-cat .banner-item{
+        display: none;
+    }
+    .banner-cat .slide-cat{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner-cat .wrap-slide-cat{
+        padding: 0;
+    }
+    /* PHẦN FILTER GIÁ */
+    .filter_products_cat {
+        margin-bottom: 20px;
+        display: block;
+    }
+    .filter_products_cat .filler_price{
+        display: flex;
+        width: 660px;
+    }
+    .filter_products_cat .filter_label{
+        overflow-x: auto;
+    }
+    .filter_products_cat .block_filter .filter-title {
+        margin-bottom: 10px;
+        color: var(--blue-color);
+    }
+    .filter_products_cat .filler_price .item{
+        margin-right: 15px;
+    }
+    .filter_products_cat .filter_style{
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    /*END  PHẦN FILTER GIÁ */
+    /* end */
+     /* end */
+    /* product */
+    .products-cat .order-select{
+        display: none;
+    }
+    .field-title .title-name .multipe_fiter{
+        display: none;
+    }
+    .products-cat-frame .products-grid .item{
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    /* end */
+    /* review nói về điện thoại hay */
+    .post3 .block_testimonials{
+        margin-bottom: 20px;
+    }
+    .post3 .block_testimonials .title p{
+        display: none;
+    }
+    .post3 .block_testimonials .title span{
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0px 8px 65px;
+    }
+    .post3 .block_testimonials .content_wrap{
+        overflow-x: auto;
+        
+    }
+    .post3 .block_testimonials .content{
+        width: 1060px;
+    }
+    /* end */
+    /* footer */
+    #footer{
+        padding: 30px 15px 20px;
+        border-radius: 10px;
+    }
+    .footer__top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .footer__menu .level0 ul{
+        display: none;
+    }
+    .footer__menu .level0 {
+        border: 1px solid #e3e3e3;
+        margin-bottom: 10px;
+    }
+    .footer__menu .level0 a{
+        margin-bottom: 0;
+        padding: 8px;
+    }
+    .address__footer{
+        width: 100%;
+    }
+    /* end */
+}
