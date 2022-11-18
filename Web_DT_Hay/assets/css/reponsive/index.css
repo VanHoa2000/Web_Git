@@ -130,7 +130,7 @@
         margin-bottom: 10px;
     }
     .thumbs {
-        display: none;
+        display: none !important;
     }
     /* end */
     /* condownt */
