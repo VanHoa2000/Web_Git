@@ -1,10 +1,4 @@
-//slide show
-// var $thumbs = $(".thumbs").attr("data-item");
-//   if ($thumbs <= 5) {
-//     $thumbs = false;
-//   } else {
-//     $thumbs = true;
-//   }
+
 $(document).ready(function () {
   $(".slide-show-item").slick({
     dots: true,
