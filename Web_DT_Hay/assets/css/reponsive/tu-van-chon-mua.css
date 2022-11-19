@@ -1,0 +1,254 @@
+:root {
+    --main-color: #ff0000;
+    --main-background: #f6f6f6;
+    --blue-color: #288ad6;
+    --black-color:#333;
+}
+
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+
+    /* HEADER */
+    
+    #header {
+        padding: 6px 0;
+    }
+
+    .header__contact{
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .header__contact-text {
+        display: none;
+    }
+
+    .header__search {
+        margin: 0 15px;
+    }
+
+    .header__right-option {
+        display: none;
+    }
+    
+    .menu_mobile {
+        display: initial;
+        padding-right: 10px;
+        font-size: 40px;
+    }
+    /* --CONTENT-- */
+    #content .container {
+        margin-top: 12px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    /* PHẦN NỘI DUNG */
+    .main-area {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    /* ĐÁNH GIÁ VÀ COMMENT */
+    .tab_content_bottom .toprt .crt {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .tab_content_bottom .toprt .crt .rcrt {
+        width: 100%;
+        border-right: none;
+    }
+
+    .tab_content_bottom .toprt .crt .r {
+        padding-left: 0;
+        font-size: 11px;
+    }
+
+    .tab_content_bottom .toprt .crt .r .t {
+        font-size: 12px;
+    }
+
+    .tab_content_bottom .toprt .crt .bcrt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .tab_content_bottom .toprt .crt .bcrt a {
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+    }
+
+    /* END CONTENT */
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    /* CLASS CHUNG */
+    .tablet-hide {
+        display: none !important;
+    }
+
+    /* HEADER */
+
+    .header__search {
+        margin: 0 70px;
+    }
+
+    /* CONTENT */
+
+    /* MENU */
+    #content .menu {
+        display: none;
+    }
+    
+    /* END CONTENT */
+
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+
+    /* CLASS CHUNG */
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    /* NÚT NỔI */
+    
+    .bottom-button {
+        right: 0;
+        left: auto;
+        bottom: 30%;
+    }
+
+    .bottom-button i {
+        font-size: 42px;
+    }
+
+    .mobile-call-button {
+        display: block;
+    }
+
+    /* HEADER */
+
+    /* PHẦN breadcrumbs */
+    .breadcrumbs__wrapper .breadcrumb{
+        font-size: 13px;
+        color: #131518;
+    }
+    
+    /* MENU */
+    #content > .menu {
+        display: none;
+    }
+
+    /* CONTENT */
+    /* NỘI DUNG CHI TIẾT */
+
+    .main-area .news_detail {
+        padding: 10px;
+    }
+
+    /* SẢN PHẨM MỚI NHẤT */
+    .products-list-related .product_grid {
+        flex-wrap: wrap;
+    }
+
+    .products-list-related .product_grid {
+        margin: 0 -5px;
+    }
+
+    .products-list-related .product_grid .item {
+        margin: 5px;
+        width: calc(50% - 10px);
+    }
+
+    /* TIN KHÁC */
+
+    .news_detail .related_content {
+        flex-wrap: wrap;
+    }
+
+    .news_detail .related_content .item-related {
+        width: 50%;
+    }
+
+    /*  ĐÁNH GIÁ VÀ COMMENT */
+
+    .pagination {
+        margin-bottom: 20px;
+    }
+
+
+    /* -- PHẦN REVIEWER NÓI VỀ DIENTHOAIHAY -- */
+    .over-flow-x {
+        overflow-x: scroll;
+    }
+
+    .block_testimonials .content {
+        width: 1045px;
+    }
+
+    .post3 .block_testimonials .content .item {
+        width: 250px;
+    }
+    
+    /* -- END CONTENT-- */
+
+    /* FOOTER */
+    #footer {
+        margin-left: 4px;
+        margin-right: 4px;
+        padding: 30px 15px 20px;
+        margin-bottom: 40px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+    }
+    .footer__menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .level0 {
+        border: 1px solid #fff;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .level0 a {
+        padding: 8px;
+    }
+
+    .extendsion-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px;
+        font-size: 22px;
+    }
+    
+    .level0 ul li{
+        margin-left: 22px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px;
+    }
+
+    .level0 ul li:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+
+    .address__footer {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
