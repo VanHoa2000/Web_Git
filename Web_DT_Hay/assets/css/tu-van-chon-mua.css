@@ -276,7 +276,75 @@ img {
     align-items: center;
     margin-right: 8px;
 }
-
+/* HEADER_MENU_MOBLIE */
+.mega_menu_mb{
+    width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+    z-index: 999;
+}
+.highlight{
+    width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+    z-index: 999;
+}
+.mega_menu_mb .highlight{
+    height: 100%;
+    overflow-x: auto;
+}
+.mega_menu_mb .menu {
+    height: 100%;
+    overflow-x: auto;
+}
+.mega_menu_mb .label{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--main-background);
+    font-size: 18px;
+    position: relative;
+}
+.mega_menu_mb .toggle_parent{
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.mega_menu_mb .toggle_parent a{
+    display: flex;
+    align-items: center;
+    padding: 12px 10px 10px 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.level_1{
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+.mega_menu_mb .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 40px;
+    text-align: center;
+    border-left: 1px solid #eee;
+    z-index: 99;
+}
+.mega_menu_mb .icon i{
+   font-size: 30px;
+   margin-top: 5px;
+}
+/* END */
 /*----------- KẾT THÚC PHẦN HEADER ----------*/
 /*----------- PHẦN CONTENT -----------*/
 
