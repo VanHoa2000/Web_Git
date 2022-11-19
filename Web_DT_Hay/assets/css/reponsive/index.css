@@ -4,6 +4,109 @@
     --blue-color: #288ad6;
     --black-color:#333;
 }
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em){
+    /* HEADER */
+    
+    #header {
+        padding: 6px 0;
+    }
+
+    .header__contact{
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .header__contact-text {
+        display: none;
+    }
+
+    .header__search {
+        margin: 0 15px;
+    }
+    .header__phone,.header__merchant{
+        display: none;
+    }
+    .menu_mobile {
+        display: initial;
+        padding-right: 10px;
+        font-size: 40px;
+    }
+     /* Menu */
+     .product__menu{
+        display: none;
+     }
+     .mega_menu_mb{
+        width: 86%;
+    }
+   
+    .mega_menu_mb .highlight{
+        width: 86%;
+    
+    }
+    .mega_menu_mb a{
+        color: #333;
+    }
+    .mega_menu_mb i{
+        color: #333;
+    }
+    .mega_menu_mb .highlight .back_icon{
+        position: absolute;
+        left: 0;
+        margin-left: 30px;  
+        top: 25%;
+    }
+    .mega_menu_mb .highlight i{
+        font-size: 30px;
+    }
+    .toggle_parent.active+.highlight{
+        left: 0;
+        top:58px;
+    }
+    .menu_show{
+        left: 0;
+        top:58px;
+    }
+    .mega_menu_mb .close_all{
+        position: absolute;
+        right: -40px;
+        background: #000;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+    }
+    .mega_menu_mb .close_all i{
+        color: #fff;
+       font-size: 30px;
+    }
+    /* SLIDE */
+    .slide-show{
+        width: 76%;
+    }
+    .countdown{
+        width: 23%;
+    }
+    .countdown .banner .item:last-child{
+        display: none;
+    }
+    .thumbs {
+        display: none !important;
+    }
+    /* --CONTENT-- */
+    #content .container {
+        margin-top: 12px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .post2 .right-nav{
+        display: none;
+    }
+
+    
+}
+
+/* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
 
     /* CLASS CHUNG */
